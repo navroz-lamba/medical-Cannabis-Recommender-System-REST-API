@@ -2,17 +2,21 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-from app.api import predict, viz
+from app.api import predict, data, effects, ailments, flavors, types
 
 app = FastAPI(
-    title='DS API',
-    description='Lorem ipsum',
+    title='MED CAB DS API',
+    description='Recommend medical cannabis strain based on User input.',
     version='0.1',
     docs_url='/',
 )
 
 app.include_router(predict.router)
-app.include_router(viz.router)
+app.include_router(data.router)
+app.include_router(effects.router)
+app.include_router(ailments.router)
+app.include_router(flavors.router)
+app.include_router(types.router)
 
 app.add_middleware(
     CORSMiddleware,
