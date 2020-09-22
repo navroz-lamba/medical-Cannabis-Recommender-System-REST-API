@@ -43,7 +43,11 @@ async def predict(strain: Strain):
     X_new = strain.to_df()
     log.info(X_new)
     y_pred = random.choice(list_of_strains)
+    # making a new df for our predicted value 
+    y_pred_df = strain.loc[strain.name == y_pred]
+
     
+
     return {
-        'prediction': y_pred,
+        'prediction': y_pred_df.Description,
     }
