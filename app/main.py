@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-from app.api import predict, data, effects, ailments, flavors, types
+from app.api import predict, data, effects, ailments, flavors, types, ratings
 
 app = FastAPI(
     title='MED CAB DS API',
@@ -17,6 +17,7 @@ app.include_router(effects.router)
 app.include_router(ailments.router)
 app.include_router(flavors.router)
 app.include_router(types.router)
+app.include_router(ratings.router)
 
 app.add_middleware(
     CORSMiddleware,
