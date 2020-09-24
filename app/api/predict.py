@@ -38,7 +38,7 @@ async def predict(strain: Strain):
    
     # # description = y_pred_df.Description.to_string(index=False)
     description = y_pred_df.Description.to_json(orient='values')
-    rating = y_pred_df.Rating
+    rating = float(y_pred_df.Rating)
     effects = y_pred_df.Effects.to_json(orient='values')
     flavors = y_pred_df.Flavor.to_json(orient='values')
     
