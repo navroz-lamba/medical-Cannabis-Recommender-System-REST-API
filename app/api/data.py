@@ -4,8 +4,8 @@ import json
 
 router = APIRouter()
 
-strain = pd.read_csv('data/strains.csv')
-results = strain.to_json(orient="index")
+strains = pd.read_csv('data/strains.csv')
+results = strains.to_json(orient="index")
 
 
 @router.get('/data')

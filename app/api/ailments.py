@@ -4,65 +4,65 @@ import pandas as pd
 
 router = APIRouter()
 
-strain = pd.read_csv('data/strains.csv')
+strains = pd.read_csv('data/strains.csv')
 
 """ Return the data as JSON """
 @router.get('/ailments')
 async def ailments():
 
     depression = []
-    for i in range(strain.shape[0]):
-        if 'Depression' in strain.ailment.iloc[i]:
-            depression.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Depression' in strains.ailment.iloc[i]:
+            depression.append(strains.name.iloc[i])
     # converting into json 
     depression_json = json.dumps(depression)
 
     pain = []
-    for i in range(strain.shape[0]):
-        if 'Pain' in strain.ailment.iloc[i]:
-            pain.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Pain' in strains.ailment.iloc[i]:
+            pain.append(strains.name.iloc[i])
     # converting into json 
     pain_json = json.dumps(pain)
 
     insomnia = []
-    for i in range(strain.shape[0]):
-        if 'Insomnia' in strain.ailment.iloc[i]:
-            insomnia.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Insomnia' in strains.ailment.iloc[i]:
+            insomnia.append(strains.name.iloc[i])
     # converting into json 
     insomnia_json = json.dumps(insomnia)
 
     stress = []
-    for i in range(strain.shape[0]):
-        if 'Stress' in strain.ailment.iloc[i]:
-            stress.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Stress' in strains.ailment.iloc[i]:
+            stress.append(strains.name.iloc[i])
     # converting into json 
     stress_json = json.dumps(stress)
 
     lack_of_appetite = []
-    for i in range(strain.shape[0]):
-        if 'Lack of Appetite' in strain.ailment.iloc[i]:
-            lack_of_appetite.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Lack of Appetite' in strains.ailment.iloc[i]:
+            lack_of_appetite.append(strains.name.iloc[i])
     # converting into json 
     lack_of_appetite_json = json.dumps(lack_of_appetite)
 
     muscle_spasms = []
-    for i in range(strain.shape[0]):
-        if 'Muscle Spasms' in strain.ailment.iloc[i]:
-            muscle_spasms.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Muscle Spasms' in strains.ailment.iloc[i]:
+            muscle_spasms.append(strains.name.iloc[i])
     # converting into json 
     muscle_spasms_json = json.dumps(muscle_spasms)
 
     nausea = []
-    for i in range(strain.shape[0]):
-        if 'Nausea' in strain.ailment.iloc[i]:
-            nausea.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Nausea' in strains.ailment.iloc[i]:
+            nausea.append(strains.name.iloc[i])
     # converting into json 
     nausea_json = json.dumps(nausea)
 
     inflammation = []
-    for i in range(strain.shape[0]):
-        if 'Inflammation' in strain.ailment.iloc[i]:
-            inflammation.append(strain.name.iloc[i])
+    for i in range(strains.shape[0]):
+        if 'Inflammation' in strains.ailment.iloc[i]:
+            inflammation.append(strains.name.iloc[i])
     # converting into json 
     inflammation_json = json.dumps(inflammation)
 
