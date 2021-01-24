@@ -1,4 +1,18 @@
-# DS Build Week scaffold
+## Overview of the project 
+
+•	Collaborated remotely with a cross-functional team consisting of 4 Data Scientists, 2 Front-end Web Developers, and 2 Back-end Web Developers
+
+•	Worked as a data engineer developing the data infrastructure and interfaces necessary to collect data from different sources 
+
+•	Also designed the systems used to transform that information into clean datasets for the machine learning engineers on the team to use 
+
+•	I was also responsible for making a REST API and deploying the application on Heroku to feed data to our front-end team 
+
+## Check out the deployed REST API :
+
+https://medical-cannabis.herokuapp.com/
+
+# DS scaffold
 
 - [Big picture](#big-picture)
 - [Tech stack](#tech-stack)
