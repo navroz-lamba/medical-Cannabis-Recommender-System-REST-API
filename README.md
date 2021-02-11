@@ -8,7 +8,7 @@
 
 •	I was also responsible for making a REST API and deploying the application on Heroku to feed data to our front-end team 
 
-## Check out the deployed REST API :
+## Check out the deployed REST API:
 
 https://medical-cannabis.herokuapp.com/
 
