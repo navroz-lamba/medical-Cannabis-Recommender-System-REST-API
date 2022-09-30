@@ -16,7 +16,7 @@ fastapi = "*"
 pandas = "*"
 uvicorn = "*"
 plotly = "*"
-joblib = "==0.16.0"
+joblib = "==1.2.0"
 scikit-learn = "==0.22.2.post1"
 
 [requires]
